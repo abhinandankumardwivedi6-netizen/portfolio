@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    text-align: center;
+    transition: 0.4s;
+}
+
+/* Dark Mode */
+.dark-mode {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: white;
+}
+
+/* Light Mode */
+.light-mode {
+    background: #f4f4f4;
+    color: black;
+}
+
+/* Header */
+header {
+    padding: 60px 20px;
+}
+
+/* Card Style */
+.card {
+    background: rgba(255,255,255,0.1);
+    margin: 30px auto;
+    padding: 30px;
+    width: 80%;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    transition: transform 0.4s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Button */
+button {
+    padding: 10px 25px;
+    border-radius: 25px;
+    border: none;
+    background: #00ffd5;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: white;
+    color: black;
+}
+
+/* Mode Button */
+.mode-btn {
+    margin-top: 20px;
+}
+
+/* Fade In */
+.fade-in {
+    animation: fadeIn 2s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Slide Up */
+.slide-up {
+    animation: slideUp 1.5s ease;
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Typing Effect */
+.typing {
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 3px solid #00ffd5;
+    width: 0;
+    animation: typing 4s steps(40, end) forwards, blink 0.8s infinite;
+}
+
+@keyframes typing {
+    to { width: 100%; }
+}
+
+@keyframes blink {
+    50% { border-color: transparent; }
+}
