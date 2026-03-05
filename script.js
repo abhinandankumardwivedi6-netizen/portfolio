@@ -1,5 +1,6 @@
 function showMessage() {
-    alert("Email: abhinandankumardwivedi6@gmail.com 🚀");
+    alert("Email: abhinandankumardwivedi6@gmail.com 🚀
+          mob:7545835945");
 }
 
 const body = document.body;
@@ -29,4 +30,5 @@ function toggleMode() {
         toggleBtn.innerHTML = "🌙 Dark Mode";
         localStorage.setItem("mode", "dark");
     }
+
 }
