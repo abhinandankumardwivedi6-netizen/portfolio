@@ -1,4 +1,4 @@
-body {
+Body {
     margin: 0;
     font-family: 'Segoe UI', sans-serif;
     text-align: center;
@@ -38,6 +38,21 @@ header {
     transform: scale(1.05);
 }
 
+/* Inputs and Forms Styling (Login & Contact) */
+input, textarea {
+    display: block;
+    width: 80%;
+    margin: 15px auto;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.9);
+}
+
+textarea {
+    height: 100px;
+}
+
 /* Button */
 button {
     padding: 10px 25px;
@@ -59,33 +74,16 @@ button:hover {
     margin-top: 20px;
 }
 
-/* Fade In */
-.fade-in {
-    animation: fadeIn 2s ease-in;
-}
+/* Animations */
+.fade-in { animation: fadeIn 2s ease-in; }
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
 
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
-
-/* Slide Up */
-.slide-up {
-    animation: slideUp 1.5s ease;
-}
-
+.slide-up { animation: slideUp 1.5s ease; }
 @keyframes slideUp {
-    from {
-        transform: translateY(50px);
-        opacity: 0;
-    }
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
+    from { transform: translateY(50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
 }
 
-/* Typing Effect */
 .typing {
     overflow: hidden;
     white-space: nowrap;
@@ -94,15 +92,10 @@ button:hover {
     animation: typing 4s steps(40, end) forwards, blink 0.8s infinite;
 }
 
-@keyframes typing {
-    to { width: 100%; }
-}
+@keyframes typing { to { width: 100%; } }
+@keyframes blink { 50% { border-color: transparent; } }
 
-@keyframes blink {
-    50% { border-color: transparent; }
-
-}
-.profile-pic{
+.profile-pic {
     width:150px;
     height:150px;
     border-radius:50%;
@@ -112,10 +105,6 @@ button:hover {
     box-shadow:0 0 20px #00ffd5;
 }
 
-/* Mobile Responsive */
 @media (max-width:600px){
-    .profile-pic{
-        width:120px;
-        height:120px;
-    }
+    .profile-pic { width:120px; height:120px; }
 }
