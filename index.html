@@ -1,11 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
     <title>Abhinandan Kumar Dwivedi-Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <meta name="description" content="Abhinandan Kumar Dwivedi Portfolio Website - CSE Student and Developer">
-    <meta name="keywords" content="Abhinandan Kumar Dwivedi, portfolio, CSE student, developer, Abhinandan portfolio">
-    <meta name="author" content="Abhinandan Kumar Dwivedi">
 </head>
 <body>
 
@@ -20,7 +18,7 @@
 
     <section class="card slide-up">
         <h2>About Me</h2>
-        <p>This is the official portfolio website of Abhinandan Kumar Dwivedi.
+        <p>This is the official portfolio website of Abhinandan Kumar Dwivedi. 
         I am a CSE student and aspiring software developer.</p>
     </section>
 
@@ -34,7 +32,6 @@
         </ul>
     </section>
 
-    <!-- नया एनिमेटेड लॉगिन सेक्शन -->
     <section class="card slide-up" id="login-section">
         <h2>Login</h2>
         <form id="loginForm">
@@ -44,13 +41,15 @@
         </form>
     </section>
 
-    <section class="card slide-up">
-        <h2>Contact</h2>
-        <p>Email: abhinandankumardwivedi6@gmail.com</p>
-        <button onclick="showMessage()">Send Message</button>
+    <section class="card slide-up" id="contact-section">
+        <h2>Contact Me</h2>
+        <!-- यहाँ तुम्हारा Formspree लिंक लगा दिया गया है -->
+        <form action="https://formspree.io/f/xnjybloj" method="POST">
+            <textarea name="message" placeholder="अपना मैसेज यहाँ लिखें..." required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
     </section>
 
     <script src="script.js"></script>
 </body>
 </html>
-
