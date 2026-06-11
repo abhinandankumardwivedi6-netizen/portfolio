@@ -1,7 +1,10 @@
-function showMessage() {
-    alert("Email: abhinandankumardwivedi6@gmail.com 🚀mob:7545835945");
-}
+/* लॉगिन फॉर्म का लॉजिक */
+document.getElementById('loginForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    alert("Login feature is currently in development!");
+});
 
+/* मोड स्विच करने का लॉजिक (Dark/Light Mode) */
 const body = document.body;
 const toggleBtn = document.getElementById("modeToggle");
 
@@ -29,6 +32,4 @@ function toggleMode() {
         toggleBtn.innerHTML = "🌙 Dark Mode";
         localStorage.setItem("mode", "dark");
     }
-
 }
-
